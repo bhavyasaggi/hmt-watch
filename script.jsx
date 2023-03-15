@@ -328,7 +328,11 @@ function Root() {
           updateData({ action: DATA_CONTEXT_ACTIONS.LOADING_RESET })
         })
     }
-    window.addEventListener('load', loadEventListener)
+    if (document.readyState === 'complete') {
+      loadEventListener()
+    } else {
+      window.addEventListener('load', loadEventListener)
+    }
     return () => {
       isStale = true
       window.removeEventListener('load', loadEventListener)
