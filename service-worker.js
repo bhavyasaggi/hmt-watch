@@ -11,7 +11,7 @@ const initFilesToCache = [
   '/apple-touch-icon.png',
   '/android-chrome-192x192.png',
   '/android-chrome-512x512.png',
-  '/script.jsx',
+  '/script.js',
 ]
 
 const isLocal = () => false // ['localhost', '127.0.0.1'].includes(self.location.hostname)
