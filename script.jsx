@@ -383,7 +383,7 @@ function HeaderComponent() {
     <Navbar variant='dark' bg='dark' expand='lg'>
       <Navbar.Brand href='/'>
         <img
-          src='/favicon-32x32.png'
+          src='./favicon-32x32.png'
           width='32'
           height='32'
           className='d-inline-block align-top'
@@ -632,7 +632,7 @@ function MainComponent() {
                   <Card.Img
                     variant='top'
                     loading='lazy'
-                    src={image}
+                    src={`//wsrv.nl/?url=${image}&w=256&h=256&l=9&q=100`}
                     alt={title}
                     height='256'
                     width='256'
